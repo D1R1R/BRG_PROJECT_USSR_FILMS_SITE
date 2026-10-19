@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Войти в аккаунт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_and_register.css') }}">
+
+    <script src="{{ url_for('static', filename='js/lg.js') }}" defer></script>
+
+</head>
+<body>
+    <main>
+        <div class="box">
+            <h1>Вход</h1>
+            <form id="login"> <!-- TODO method="POST" -->
+                <div class="formp1">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <br>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                </div>
+                <div class="forget_pass">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <div class="under_form">
+                    <button type='submit'><b>Войти</b></button>                    
+                    <br>
+                    <label>Впервые у нас?</label>
+                    <a href="/register"><b>Создать аккаунт</b></a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        
+    </footer> 
+</body>
+</html>

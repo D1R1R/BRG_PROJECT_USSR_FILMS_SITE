@@ -1,0 +1,303 @@
+main {
+    overflow: hidden;
+}
+
+
+nav a {
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    font-family: 'Typingrad';
+    font-size: 170%;
+    text-decoration: none;
+
+    padding: 5px;
+    width: 5%;
+    height: 5%;
+    border: none;
+}
+nav a:hover {
+    background-color: white;
+}
+
+nav h1 {
+    font-family: 'Typingrad';
+    color: white;
+    font-size: 600%;
+    text-align: center;
+    padding: 20px;
+
+    margin-right: auto;
+}
+nav h2 {
+    font-family: 'ussr-stencil';
+    font-size: 300%;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+
+    color: rgba(253, 55, 55, 0.822);
+    position: absolute;
+    z-index: 5;
+    margin-top: 1%;
+    margin-left: 60%;
+}
+
+.logo2 {
+    padding: 20px;
+    padding-top: 20px;
+    margin-right: auto;
+    position: absolute;
+}
+
+.logo2 img {
+    width: 80%;
+    height: 30%;
+}
+
+.vc2 {
+    height: 80vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: -4%;
+}
+.vc2 video {
+    width: 100%;
+}
+
+.no_vid {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4%;
+}
+
+.no_vid h3 {
+    font-family: 'Typingrad';
+    color: hsla(0, 84%, 56%, 0.292);
+    font-size: 300%;
+    text-align: center;
+    padding: 20px;
+
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.cont {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+.cont h1, h2, h3, h4, h5, h6, p {
+    color: white;
+}
+.cont h3, .cont_anal h3 {
+    font-family: 'Typingrad';
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    padding: 30px;
+}
+
+.cont p {
+    color: rgba(255, 255, 255, 0.708);
+    hyphens: auto;
+    font-family: 'Buira';
+    text-align: justify;
+    font-size: 150%;
+    width: 100%;
+}
+
+.cont_desc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.poster_small {
+    margin: 20px;
+    height: 40vh;
+
+    filter: grayscale(100%);
+}
+
+.cont input{
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    appearance: none;
+
+    backdrop-filter: blur(10px) saturate(50%);
+    background: transparent;
+
+    border-radius: 0;;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    top: 0;
+    right: 0;
+}
+
+.cont input:after {
+    content: "\2764";
+    display:inline-block;
+    font-size: 35px;
+
+    -webkit-text-stroke: 2px white;
+
+    color: transparent;
+}
+.cont input:hover:after, .cont input:checked:hover:after {
+    -webkit-text-stroke: 3px black;
+    
+    font-size: 40px;
+}
+
+.cont input:hover, .cont input:checked:hover {
+    background: #fff;
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+.cont input:checked:after {
+    color: black;
+    -webkit-text-stroke: 2px #ff603c;
+}
+
+.cont input:checked, .cont input:checked:hover {
+    background-color: #ea5a38;
+    border-color: #ea5a38;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.cont_anal {
+    width: 70%;
+    height: 60vh;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.696);
+    margin: 30px auto;
+    align-items: center;
+    margin-top: 50px;
+
+    backdrop-filter: blur(5px) saturate(70%);
+    transition: border 1s ease;
+}
+
+
+.cont_anal:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgb(252, 252, 252);
+}
+
+.cont_anal h3 {
+    font-family: 'Buira';
+    font-size: 300%;
+    padding-top: 10px;
+}
+.cont_anal p {
+    color: rgba(255, 255, 255, 0.708);
+    hyphens: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 150%;
+    width: 81%;
+    margin-left: auto;
+    padding: 20px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.cc1, .cc2, .cc3  {
+    position: absolute;
+}
+
+.cc1 {
+    bottom: 55vh;
+    right: 0;
+    width: 20%;
+    z-index: -1;
+}
+
+.cc2 {
+    bottom: 23vh;
+    margin-left: 2%;
+    width: 30%;
+    z-index: 1;
+}
+
+.cc3 {
+    top: 110vh;
+    margin-left: 2%;
+    width: 10%;
+    z-index: 1;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+.cont_revards {
+    width: 60%;
+    height: 70vh;
+    overflow: hidden;
+}
+.aw {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.cont_revards h4 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 140%;
+    color: rgba(255, 255, 255, 0.479);
+    padding: 30px;
+
+}
+
+.cr2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 15vw;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.cr2 img {
+    height: 50%;
+}
+
+.cr2 h5{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.cr2 h6 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.479);
+}
